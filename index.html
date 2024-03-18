@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Creatives</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
     <link rel="stylesheet" href="app.css">
+    <script defer src="app.js"></script>
+    <script src=""></script>
 </head>
 <body>
     <section id="s1">
         <div class="container">
             <nav>
-                
-                <ul>
-                    <li><img src="Logo.png" alt=""></li>
+                <ul id="slidebar">
+                    <li onclick=hideSlidebar()><a href=""><img src="images/Logo.png" alt=""></a></li>
                     <li><a href="">Home</a></li>
                     <li><a href="#div2">Pages</a></li>
                     <li><a href="">Features</a></li>
@@ -28,7 +29,24 @@
                     <a href=""><i class="fa-brands fa-twitter fa-lg" style="color: #f7f9fc;"></i></a>
                     <a href=""><i class="fab fa-skype" style="color: #e9ecf1;"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin fa-lg" style="color: #eceff3;"></i></a>
-                </div>
+                
+                </ul>
+                
+                <ul>
+                    <li class="hideOnMobile"><img src="images/Logo.png" alt=""></li>
+                    <li class="hideOnMobile"><a href="">Home</a></li>
+                    <li class="hideOnMobile"><a href="#div2">Pages</a></li>
+                    <li class="hideOnMobile"><a href="">Features</a></li>
+                    <li class="hideOnMobile"><a href="">Extensions</a></li>
+                    <li class="hideOnMobile"><a href="">Tutorials</a></li>
+                    <li class="hideOnMobile"><a href="">Contact Us</a></li>
+                    <div class="socials">
+                    <a class="hideOnMobile" href=""><i class="fa-brands fa-facebook-f fa-lg" style="color: #f1f2f3;"></i></a>
+                    <a class="hideOnMobile" href=""><i class="fa-brands fa-twitter fa-lg" style="color: #f7f9fc;"></i></a>
+                    <a class="hideOnMobile" href=""><i class="fab fa-skype" style="color: #e9ecf1;"></i></a>
+                    <a class="hideOnMobile" href=""><i class="fa-brands fa-linkedin fa-lg" style="color: #eceff3;"></i></a>
+                    <li class="menuButton" onclick=showSlidebar()><svg xmlns="http://www.w3.org/2000/svg" height="29" fill="#FFFFFF"  viewBox="0 -960 960 960" width="29"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                    
                 </ul>
             </nav>
             <div class="h1">
@@ -51,7 +69,7 @@
           </div>
     </section>
 
-    <!-- <section id="s2"> -->
+    <section id="s2">
         
         <div id="div2">
             <div class="big-w">W</div>
@@ -64,7 +82,7 @@
                 <div class="feature12">
                     <div class="search-container">
                         
-                        <img src="Write.png" alt="">
+                        <img src="images/Write.png" alt="">
                         <path d="center"/>
                         </svg>
                     </div>
@@ -73,7 +91,7 @@
                 </div>
                 <div class="feature1">
                     <div class="search-container">
-                        <img src="Write.png" alt="">
+                        <img src="images/Write.png" alt="">
                         <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l5 4.99 1.42-1.42-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                         </svg>
                     </div>
@@ -92,7 +110,7 @@
                 </div>
                 <div class="feature1">
                     <div class="search-container">
-                        <img src="Simon says.png" alt="">
+                        <img src="images/Simon says.png" alt="">
                         <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l5 4.99 1.42-1.42-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                         </svg>
                       </div>
@@ -101,10 +119,10 @@
                 </div>
             </div>
         </div>
-
+    </section>
         
     <!-- </section> -->
-    <section>
+    <section id="s3">
         <div id="div3">
             <div class="square1">
                 <p>Jan 4 2016 | In Culture</p>
@@ -128,7 +146,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="s4">
         <div id="div1">
         <div class="big-b">B</div>
         <div id="h3">
@@ -136,24 +154,24 @@
         </div>
         <div id="heading"><h1>We love clean design and advanced digital solutions.</h1></div>
         <div id="blog1">
-            <img src="blog/Blog1/Layer 83.png" alt="">
+            <img src="images/Layer 83.png" alt="">
             <h3>Fresh Summer Campaign</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit placeat reprehenderit officiis corrupti non minima saepe. Distinctio excepturi voluptatibus vitae debitis incidunt, inventore, nesciunt atque, cum vero sapiente est veritatis iusto? Iste eaque illo, explicabo tempora nam odit nisi in.</p>
         </div>
         <div id="blog1">
-            <img src="blog/Blog2/Layer 84.png"">
-            <h3>Fresh Summer Campaign</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit placeat reprehenderit officiis corrupti non minima saepe. Distinctio excepturi voluptatibus vitae debitis incidunt, inventore, nesciunt atque, cum vero sapiente est veritatis iusto? Iste eaque illo, explicabo tempora nam odit nisi in.</p>
-        </div>
-
-        <div id="blog1">
-            <img src="blog/Blog3/Layer 85.png" alt="">
+            <img src="images/Layer 84.png"">
             <h3>Fresh Summer Campaign</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit placeat reprehenderit officiis corrupti non minima saepe. Distinctio excepturi voluptatibus vitae debitis incidunt, inventore, nesciunt atque, cum vero sapiente est veritatis iusto? Iste eaque illo, explicabo tempora nam odit nisi in.</p>
         </div>
 
         <div id="blog1">
-            <img src="blog/Blog1/Layer 83.png" alt="">
+            <img src="images/Layer 85.png" alt="">
+            <h3>Fresh Summer Campaign</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit placeat reprehenderit officiis corrupti non minima saepe. Distinctio excepturi voluptatibus vitae debitis incidunt, inventore, nesciunt atque, cum vero sapiente est veritatis iusto? Iste eaque illo, explicabo tempora nam odit nisi in.</p>
+        </div>
+
+        <div id="blog1">
+            <img src="images/Layer 83.png" alt="">
             <h3>Fresh Summer Campaign</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit placeat reprehenderit officiis corrupti non minima saepe. Distinctio excepturi voluptatibus vitae debitis incidunt, inventore, nesciunt atque, cum vero sapiente est veritatis iusto? Iste eaque illo, explicabo tempora nam odit nisi in.</p>
         </div>
@@ -162,21 +180,21 @@
         
     </section>
 
-    <section>
+    <section id="s5">
         <div id="background">
-            <div class="d1" style="width: 50%; height: 100%;"> <img src="quickAction/Write copy 2.png" alt=""> 
+            <div class="d1" style="width: 50%; height: 100%;"> <img src="images/Write copy 2.png" alt=""> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium doloremque cumque consectetur, distinctio delectus unde quo ex est error?</p>
             </div>
         <div class="d2" style="width: 50%; height: 100%; position: relative; left: 50%; bottom: 100%;">
-        <img id="image" src="quickAction/Write copy 2.png" alt="">
+        <img id="image" src="images/Write copy 2.png" alt="">
             <p id="p2" style="position:relative; left: 30%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur laudantium doloremque cumque consectetur, distinctio delectus unde quo ex est error?</p>
         </div>
         
     </section>
 
-    <section>
+    <section id="s6">
         <div id="text_area">
-            <img src="textArea/Rectangle 1 copy.png" alt="">
+            <img src="images/Rectangle 1 copy.png" alt="">
             <h1>AKITA INU DOG</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus animi perspiciatis labore quaerat facilis recusandae explicabo asperiores impedit nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus animi perspiciatis labore quaerat facilis recusandae explicabo asperiores impedit nihil?</p>
             <h2 class="h12">Fully responsive design</h2>
@@ -185,30 +203,31 @@
         </div>
     </section>
 
-    <section>
+    <section id="s7">
         <div id="team">
             <div class="big_t">T</div>
             <div id="h"><h1>Our Team</h1></div>
 
             <div id="team_heading"><h1>sales long tail pitch release niche market.</h1></div>
             <div id="team_member1">
-                <img src="team/Layer 81.png" alt="">
+                <img src="images/Layer 81.png" alt="">
                 <div id="info"><h3>John Snow</h3>
                 <h5>CEO</h5>
                 </div>
 
+
             </div>
 
             <div id="team_member2">
-                <img src="team/Layer 82.png" alt="">
+                <img src="images/Layer 82.png" alt="">
                 <div id="info2"><h3>Lady Sansa</h3>
                 <h5>WebDesigner</h5>
                 </div>
 
             </div>
 
-            <div id="team_member3">
-                <img src="team/Layer 93.png" alt="">
+            <div id="team_member3"> 
+                <img src="images/Layer 93.png" alt="">
                 <div id="info3"><h3>David Smith</h3>
                 <h5>Photographer</h5>
                 </div>
@@ -216,7 +235,7 @@
             </div>
 
             <div id="team_member4">
-                <img src="team/Layer 94.png" alt="">
+                <img src="images/Layer 94.png" alt="">
                 <div id="info4"><h3>Lady Sansa</h3>
                 <h5>Photographer</h5>
                 </div>
@@ -225,7 +244,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="s8">
         <div id="inform">
             <div class="big-c">C</div>
             <div id="headi"><h1>We'd Love to hear about your Project</h1></div>
@@ -234,25 +253,24 @@
                 <input type="text" placeholder="Email" name="" id="email">
                 <input type="text" placeholder="Phone Number" id="phone">
                 <input  placeholder="Message" id="Message">
-                <button id="Submit" style="height: 50px; width: 120px; position: relative; left: 47%; top: 15rem; background-color: #11749E; color: white; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; font-size: large; font-weight: lighter;">
+                <button id="submit2" style="height: 50px; width: 120px; position: relative; left: 47%; top: 15rem; background-color: #11749E; color: white; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; font-size: large; font-weight: lighter;">
                     Submit</button>
 
             </form>
         </div>
     </section>
 
-    <section>
+    <section id="s9">
         <div id="Map">
-            <img src="map/Layer 98.png" alt="">
+            <img src="images/Layer 98.png" alt="">
         </div>
     </section>
 
-    <section>
+    <section id="s10">
         <div id="footer">
             <h3>2016 PSDfreebies.com - All Rights Reserved</h3>
-            <img src="footer.png" alt="">
+            <img src="images/footer.png" alt="">
         </div>
     </section>
-
 </body>
 </html>

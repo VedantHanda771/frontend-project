@@ -4,12 +4,14 @@
 }
 .container{
     /* background-image: url("https://img.freepik.com/free-photo/flat-lay-camera-black-background-with-copy-space_23-2148363419.jpg?t=st=1706626378~exp=1706626978~hmac=e4fa074305f5e75a79f96eae3388a45f561d2c4273fbe1e8344ce8f668b91e69"); */
-    background-image: url("Layer\ 96.png");
+    background-image: url("images/Layer\ 96.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
+    
 
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -45,13 +47,46 @@ nav li{
 nav {
     width: 100%;
     border-bottom: 2px solid gray;
+    
+    animation: scrollAnimation 0.5s ease-in-out forwards;
 }
+#slidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #3c3c3b2f;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#slidebar li{
+    width: 100%;
+
+}
+
+#slidebar a{
+    width: 100%;
+}
+
+.menuButton{
+    display: none;
+}
+ 
 #h1{
     color: white;
     text-align: center;
     font-size: 8rem;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+    animation: fade-down 0.5s;
+    
+    animation: scrollAnimation 0.5s ease-in-out forwards;
 }
 .h1{
     display: block;
@@ -110,6 +145,7 @@ nav {
     /* top: 320px; */
     top: -73px;
     height: 100vh;
+    
 }
 
 .features{
@@ -118,16 +154,37 @@ nav {
     width: 70%;
     right: 0%;
     padding-top: 100px;
+
+    /* opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s; */
 }
 .feature1{
     padding-left: 50px;
     width: 40%;
     padding-top: 40px;
+    
+
+    
+
+    /* opacity: 1;
+    filter: blur(0);
+    transform: translateX(0); */
 }
 .feature12{
     padding-left: 50px;
     width: 40%;
     padding-top: 40px;
+
+    /* opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;*/
+
+    /* opacity: 1;
+    filter: blur(0);
+    transform: translateX(0); */
     
 }
 p{
@@ -170,6 +227,9 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     bottom: 33%;
     color: #3C8DAF; /* Change the color of the W as needed */
+    animation: scrollAnimation 0.5s ease-in-out forwards;
+
+    
 }
 
 .scroll-container {
@@ -226,6 +286,7 @@ left: 20px;
     text-align: center;
     padding-top: 0px;
     padding-right:320px;
+    
 }
 
 
@@ -235,10 +296,11 @@ left: 20px;
     padding-top: 3px;
     text-align: left;
     
+    
 }
 
 .square2{
-    background-image: url("newsAgency1/Layer\ 88.png");
+    background-image: url("images/Layer\ 88.png");
 }
 #pic3{
     width: 100%;
@@ -262,7 +324,7 @@ left: 20px;
 }
 
 .square3{
-    background-image: url("newsAgency2/Layer\ 90.png");
+    background-image: url("images/Layer\ 90.png");
 }
 
 .big-b {
@@ -274,6 +336,7 @@ left: 20px;
     bottom: 61%;
     color: #C7C8CC; 
     font-stretch: condensed;
+    animation: scrollAnimation 0.5s ease-in-out forwards;
 }
 
 #div1{
@@ -336,7 +399,7 @@ left: 20px;
 }
 
 #background{
-    background-image: url("quickAction/Rectangle\ 4\ copy\ 3.png");
+    background-image: url("images/Rectangle\ 4\ copy\ 3.png");
     height: 300px;
 }
 
@@ -362,7 +425,7 @@ left: 20px;
 }
 
 #text_area{
-    background-image: url("textArea/Layer\ 87.png");
+    background-image: url("images/Layer\ 87.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
@@ -372,6 +435,7 @@ left: 20px;
     position: relative;
     left: 63%;
     top: 14%;
+    animation: scrollAnimation 0.5s ease-in-out forwards;
 
 }
 
@@ -412,6 +476,8 @@ left: 20px;
     bottom: 29%;
 
 }
+
+
 
 .h22{
     color: #fff;
@@ -468,6 +534,7 @@ left: 20px;
     bottom: 61%;
     color: #C7C8CC; 
     font-stretch: condensed;
+    animation: scrollAnimation 0.5s ease-in-out forwards;
 }
 
 #h h1{
@@ -652,7 +719,7 @@ left: 20px;
 }
 
 #inform{
-    background-image: url("backGrounds/Layer\ 97.png");
+    background-image: url("images/Layer\ 97.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
@@ -671,6 +738,7 @@ left: 20px;
     bottom: -10%;
     color:#42433E;
     width: 120px;
+    animation: scrollAnimation 0.5s ease-in-out forwards;
     
     
 }
@@ -772,3 +840,351 @@ left: 20px;
 }
 
 
+
+@media screen and (max-width: 768px) {
+    nav img {
+        height: 40px; /* Reduce image height for smaller screens */
+        width: 40px; /* Reduce image width for smaller screens */
+    }
+
+    nav ul {
+        flex-direction:column ; /* Stack menu items vertically */
+        align-items: left; /* Center items vertically */
+        
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Add vertical spacing between stacked menu items */
+        
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+
+    #h1 {
+        font-size: 5rem; /* Adjusted for smaller screens */
+    }
+
+    #h2 h1,
+    #h2 h4 {
+        font-size: 20px; /* Adjusted for smaller screens */
+    }
+
+    #h2 h1 {
+        bottom: 29rem; /* Adjusted for smaller screens */
+        left: 7rem;
+    }
+
+    #h2 h4 {
+        bottom: 20rem; /* Adjusted for smaller screens */
+    }
+
+    .features {
+        width: 50%; /* Reduce width for smaller screens */
+        padding:10px ; /* Adjusted padding for spacing */
+        margin-bottom: 12px; /* Adjusted spacing between features */
+        height: 44%;
+        right: 30%;
+    }
+
+    .feature1, .feature2 {
+        padding: 15px; /* Adjusted padding for spacing */
+    }
+
+    .socials {
+        justify-content: center; /* Center social icons */
+        
+    }
+
+    .big-w {
+        font-size: 7rem; /* Increase font size for larger screens */
+        position: absolute; /* Position absolutely */
+        top: 27%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    }
+
+    #div3 {
+        grid-template-columns: 1fr; /* Change to single column layout for smaller screens */
+    }
+
+    .square1, .square2, .square3, .square4 {
+        width: 100%; /* Full width for single column layout */
+        margin-bottom: 20px; /* Added margin between grid items */
+    }
+
+    .square1 h2, .square4 h2 {
+        padding-right: 0; /* Remove right padding for headings on smaller screens */
+    }
+
+    #text {
+        width: 80%; /* Adjusted width for smaller screens */
+        padding-left: 20px; /* Adjusted padding for smaller screens */
+        padding-top: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .big-b {
+        font-size: 8rem; /* Adjusted font size for smaller screens */
+        left: 45%; /* Adjusted position for smaller screens */
+        bottom: 106%; /* Adjusted position for smaller screens */
+    }
+
+    #div1 {
+        height: auto; /* Adjusted height for smaller screens */
+    }
+
+    #h3 h1 {
+        bottom: 30.5rem; /* Adjusted position for smaller screens */
+        left: 33.5%;
+    }
+
+    #heading h1 {
+        bottom: 26rem; /* Adjusted position for smaller screens */
+        font-size: 21px;
+        left: 10%;
+    }
+
+    #blog1, #background {
+        left: 5%; /* Adjusted position for smaller screens */
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+
+    #background img {
+        left: 10%; /* Adjusted position for smaller screens */
+
+    }
+
+    #background p, #text_area p {
+        width: 90%; /* Adjusted width for smaller screens */
+        left: 5%; /* Adjusted position for smaller screens */
+        bottom: auto; /* Remove bottom position for smaller screens */
+    }
+
+    
+
+    #blog1 img,
+    #blog2 img,
+    #blog3 img,
+    #blog4 img,
+    #background img,
+    #text_area img {
+        width: 70%; /* Adjust width to fill the container */
+        height: 30%;
+    }
+
+    #blog1 p,
+    #blog2 p,
+    #blog3 p,
+    #blog4 p,
+    #background p,
+    #text_area p {
+        width: 70%; /* Set paragraph width to fill the container */
+        height: 40%;
+        bottom: 40%;
+        font-size: 12px;
+    }
+
+    #background {
+        background-size: 100%; /* Ensure background image covers the entire container */
+        height: auto; /* Allow background container height to adjust based on content */
+        padding: 20px; /* Add padding for better spacing */
+        text-align: center; /* Center-align content */
+    }
+
+    #background img {
+        left: 40%; /* Center horizontally */
+        transform: translateX(-50%); /* Center using transform */
+        top: 50%; /* Center vertically */
+        margin-top: 20px; /* Add margin for better spacing */
+        height: 50px;
+        width: 70px;
+    }
+
+
+
+    #background p {
+        width: 100%; /* Make paragraph width 100% */
+        max-width: 90%; /* Limit maximum width to maintain readability */
+        margin: 20px auto; /* Center horizontally and add margin for better spacing */
+        position: static; /* Reset positioning */
+        bottom: auto; /* Reset bottom positioning */
+        left: auto; /* Reset left positioning */
+        right: auto; /* Reset right positioning */
+        top: auto; /* Reset top positioning */
+    }
+
+    #text_area {
+        height: auto; /* Allow container height to adjust based on content */
+        padding: 20px; /* Add some padding for better spacing */
+    }
+
+    #text_area img {
+        display: block; /* Ensure the image is displayed as a block */
+        margin: 0 auto; /* Center the image horizontally */
+        max-width: 70%; /* Make the image responsive */
+        height: auto; /* Ensure aspect ratio is maintained */
+        margin-bottom: 20px; /* Add some space below the image */
+        left: 10rem;
+    }
+
+    #text_area h1 {
+        text-align: left; /* Center-align the heading */
+        margin-bottom: 20px; /* Add some space below the heading */
+        top: -20rem;
+        left: 1rem;
+        
+    }
+
+    #text_area p {
+        font-size: 14px; /* Reduce font size for better readability */
+        line-height: 1.5; /* Improve line spacing for readability */
+        text-align: left; /* Justify-align paragraphs */
+        margin-bottom: 20px; /* Add some space below paragraphs */
+        top: -20rem;
+        width: 50%;
+
+    }
+
+    .h12,
+    .h22,
+    .h32 {
+        width: 57%; /* Ensure full width for header elements */
+        height: 20%;
+        text-align: left; /* Center-align header elements */
+        padding: 10px; /* Add some padding for better spacing */
+        margin-bottom: 10px; /* Add some space below headers */
+        top: -15rem;
+        left: 1rem;
+        
+    }
+    
+
+    #team {
+        padding-left: 0; /* Remove padding to center team section */
+        text-align: center; /* Center-align the content */
+    }
+
+    .big_t {
+        font-size: 8rem; /* Adjust heading font size */
+        bottom: 55%; /* Adjust heading position */
+    }
+
+    #team_member1 img,
+    #team_member2 img,
+    #team_member3 img,
+    #team_member4 img {
+        width: 100px; /* Adjust image width */
+        height: auto; /* Ensure aspect ratio is maintained */
+        margin-bottom: 20px; /* Add space between team members */
+        left: 5%;
+    }
+
+    #info,
+    #info2,
+    #info3,
+    #info4 {
+        margin: 0 auto 20px; /* Center horizontally and add space between info boxes */
+        width: 100px; /* Adjust info box width */
+        text-align: center; /* Center-align text */
+        left: 5%;
+        font-size: 11px;
+    }
+
+    #team_heading h1 {
+        position: absolute; /* Remove absolute positioning */
+        bottom: 47%; /* Align heading to the bottom */
+        font-size: 1rem;
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center using transform */
+    }
+
+    #h h1{
+        color: black;
+        position:absolute;
+        left: 37%; 
+        bottom: 22.5rem;
+        font-size: 2rem;
+    }
+
+    #inform {
+        height: auto; /* Allow container height to adjust based on content */
+    }
+
+    .big-c {
+        font-size: 8rem; /* Adjust the font size for smaller screens */
+        bottom: 0; /* Adjust bottom positioning */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center using transform */
+    }
+
+    #headi {
+        left: 60%; /* Center horizontally */
+        transform: translateX(-50%); /* Center using transform */
+         /* Adjust bottom positioning */
+        width: 90%; /* Adjust width for smaller screens */
+        font-size: small;
+        position: relative;
+        top: -5rem;
+    }
+
+    #name,
+    #email,
+    #phone {
+        width: 80%; /* Adjust width for smaller screens */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center using transform */
+        position: relative;
+        top: -3rem;
+    }
+
+    #Message {
+        width: 50%; /* Adjust width for smaller screens */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-80%); /* Center using transform */
+        top: 1rem; /* Adjust top positioning */
+        position: relative;
+        top: -3rem;
+    }
+
+    #Submit button{
+        position: relative;
+        top: 1rem;
+    }
+
+    
+    #Map img{
+        width: 515px;
+        height: 250px;
+        position: relative;
+        top: 10%;
+    }
+
+    #footer {
+        height: auto; /* Allow footer height to adjust based on content */
+        padding: 20px; /* Add padding for better spacing */
+        text-align: center; /* Center-align content */
+    }
+
+    #footer h3 {
+        left: 0; /* Reset left positioning */
+        top: 0; /* Reset top positioning */
+        margin-bottom: 10px; /* Add margin for better spacing */
+    }
+
+    #footer img {
+        left: 30%; /* Center horizontally */
+        transform: translateX(-50%); /* Center using transform */
+        top: 0; /* Reset top positioning */
+        margin-top: 10px; /* Add margin for better spacing */
+    }
+}
+
+
+@media (max-width: 400px){
+    #slidebar{
+        width: 100%;
+    }
+}
